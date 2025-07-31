@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Ignore all data files but keep sample data placeholder
+data/raw/*
+!data/raw/README.md
+
+# VSCode or JetBrains IDE settings
+.vscode/
+.idea/
+
+# macOS system file
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+*.pytest_cache/
+
+# Logs
+*.log
+
+# Environment variable files
+.env
+
