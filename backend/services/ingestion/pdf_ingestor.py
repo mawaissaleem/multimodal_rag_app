@@ -1,6 +1,7 @@
 import os
 import fitz  # PyMuPDF
 import logging
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
@@ -77,3 +78,19 @@ class PDFIngestor:
         metadata = self.extract_metadata()
         pages = self.extract_text()
         return {"metadata": metadata, "pages": pages}
+
+    def chunk_text(self, chunk_size=500, chunk_overlap=50):
+        """
+        Split extracted text into chunks using Langchain's RecursiveCharacterTextSplitter.
+        """
+        pages = self.extract_text()
+        all_text = "\n".join([page["text"] for page in pages if page["text"]])
+
+        text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+            separators=["\n\n", "\n", ".", "!", "?", " ", ""],
+        )
+
+        chunks = text_splitter.split_text(all_text)
+        return chunks
