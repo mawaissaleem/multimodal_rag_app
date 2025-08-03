@@ -68,7 +68,7 @@ def run_video_pipeline(video_path):
 if __name__ == "__main__":
     # Use absolute paths to ensure files are found
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.."))
-    pdf_path = os.path.join(base_dir, "data", "raw", "file01.pdf")
+    pdf_path = os.path.join(base_dir, "data", "uploads", "Evaluation Task.pdf")
     video_path = os.path.join(base_dir, "data", "raw", "video01.mp4")
 
     run_pdf_pipeline(pdf_path)
@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
     chroma = ChromaManager()
     # Query for PDF content
-    pdf_query = "What is the PDF about?"
+    pdf_query = "evaluation criteria?"
     pdf_result = chroma.query(query_text=pdf_query, n_results=50)
     if pdf_result and pdf_result["documents"]:
         filtered_pdf_result = {
