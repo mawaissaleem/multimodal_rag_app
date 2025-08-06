@@ -1,5 +1,3 @@
-# backend/services/gpt_generator.py
-
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 import logging
