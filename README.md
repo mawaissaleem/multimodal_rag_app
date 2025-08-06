@@ -19,7 +19,7 @@ FFmpeg: Audio extraction from videos
 Faster-Whisper: Local video transcription
 FastAPI: Backend API
 DistilGPT-2: Local text generation
-Frontend: [React/Vue/JS] (replace with actual framework)
+Frontend: React
 
 📂 Project Structure
 Based on https://github.com/mawaissaleem/multimodal_rag_app:
