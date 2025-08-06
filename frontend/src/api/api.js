@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000"; // Change if needed
+const API_BASE = "http://localhost:8000"; 
 
 export async function uploadFile(file) {
   const formData = new FormData();
