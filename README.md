@@ -1,6 +1,20 @@
 # Multimodal RAG App
 
-A local Retrieval-Augmented Generation (RAG) application built in Python to ingest, embed, and query PDF and video files using ChromaDB, with a React web interface for user interaction. Built to explore RAG concepts and showcase skills in AI, backend, and frontend development.
+A local Retrieval-Augmented Generation (RAG) application built in Python to ingest, embed, and query PDF and video files using ChromaDB, with a React web interface.
+Built to explore RAG concepts and showcase skills in AI, backend, and forntend developmen.
+
+## Demo
+
+![Demo Video](assets/demo.mp4)
+
+
+## Screenshots
+
+![Upload](assets/image03.png)
+
+![Answers](assets/image02.png)
+
+![Sources](assets/image01.png)
 
 ## 🚀 Features
 
