@@ -5,7 +5,7 @@ Built to explore RAG concepts and showcase skills in AI, backend, and forntend d
 
 ## Demo
 
-![Demo Video](assets/demo.mp4)
+![Demo Video](assets/demo.gif)
 
 
 ## Screenshots
